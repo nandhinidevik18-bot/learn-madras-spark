@@ -1,5 +1,5 @@
 import { Phone, MapPin } from "lucide-react";
-import mecLogo from "@/assets/mec-logo.png";
+import madrasLogo from "@/assets/madras-logo-full.png";
 
 const Header = () => {
   return (
@@ -8,18 +8,10 @@ const Header = () => {
         {/* Left Side - Logo and College Name */}
         <div className="flex items-center gap-4">
           <img 
-            src={mecLogo} 
-            alt="Madras Engineering College Logo" 
-            className="w-16 h-16 object-contain"
+            src={madrasLogo} 
+            alt="Madras Engineering College" 
+            className="h-16 lg:h-20 w-auto object-contain"
           />
-          <div className="flex flex-col">
-            <h1 className="text-xl lg:text-2xl font-bold text-primary tracking-tight leading-tight">
-              MADRAS
-            </h1>
-            <p className="text-sm lg:text-base font-semibold text-primary/80 tracking-wide">
-              ENGINEERING COLLEGE
-            </p>
-          </div>
         </div>
 
         {/* Right Side - TNEA Code, Phone, Location */}
