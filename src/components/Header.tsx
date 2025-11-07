@@ -1,4 +1,5 @@
 import { Phone, MapPin } from "lucide-react";
+import mecLogo from "@/assets/mec-logo.png";
 
 const Header = () => {
   return (
@@ -6,9 +7,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
         {/* Left Side - Logo and College Name */}
         <div className="flex items-center gap-4">
-          <div className="w-16 h-16 bg-gradient-purple rounded-lg flex items-center justify-center shadow-elegant">
-            <span className="text-2xl font-bold text-primary-foreground">MEC</span>
-          </div>
+          <img 
+            src={mecLogo} 
+            alt="Madras Engineering College Logo" 
+            className="w-16 h-16 object-contain"
+          />
           <h1 className="text-xl lg:text-2xl font-bold text-primary tracking-tight">
             MADRAS ENGINEERING COLLEGE
           </h1>
