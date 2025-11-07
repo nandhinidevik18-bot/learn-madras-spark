@@ -12,9 +12,14 @@ const Header = () => {
             alt="Madras Engineering College Logo" 
             className="w-16 h-16 object-contain"
           />
-          <h1 className="text-xl lg:text-2xl font-bold text-primary tracking-tight">
-            MADRAS ENGINEERING COLLEGE
-          </h1>
+          <div className="flex flex-col">
+            <h1 className="text-xl lg:text-2xl font-bold text-primary tracking-tight leading-tight">
+              MADRAS
+            </h1>
+            <p className="text-sm lg:text-base font-semibold text-primary/80 tracking-wide">
+              ENGINEERING COLLEGE
+            </p>
+          </div>
         </div>
 
         {/* Right Side - TNEA Code, Phone, Location */}
