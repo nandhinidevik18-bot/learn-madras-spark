@@ -1,4 +1,8 @@
 import CourseCard from "./CourseCard";
+import cseImage from "@/assets/course-cse.jpg";
+import aidsImage from "@/assets/course-aids.jpg";
+import itImage from "@/assets/course-it.jpg";
+import futureImage from "@/assets/course-future.jpg";
 
 const CoursesSection = () => {
   const courses = [
@@ -7,18 +11,21 @@ const CoursesSection = () => {
       description: "Design, develop, and lead with powerful computing skills to drive innovation in the digital world.",
       buttonText: "Let's Start",
       variant: "success" as const,
+      image: cseImage,
     },
     {
       title: "B.Tech. in Artificial Intelligence & Data Science (AIDS)",
       description: "Master AI, Machine Learning & Big Data to solve real-world problems with intelligent solutions.",
       buttonText: "Let's Chat",
       variant: "danger" as const,
+      image: aidsImage,
     },
     {
       title: "B.Tech. in Information Technology (IT)",
       description: "Ace Computing, Programming & System Design to build innovative software & technology solutions.",
       buttonText: "Let's Chat",
       variant: "primary" as const,
+      image: itImage,
       subCourses: [
         {
           title: "B.E. in Computer Science & Engineering (Cyber Security)",
@@ -39,6 +46,7 @@ const CoursesSection = () => {
       description: "Discover additional specialized programs and courses tailored to shape your future in technology.",
       buttonText: "Coming Soon",
       variant: "success" as const,
+      image: futureImage,
     },
   ];
 

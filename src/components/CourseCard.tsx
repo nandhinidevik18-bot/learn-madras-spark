@@ -6,13 +6,14 @@ interface CourseCardProps {
   description: string;
   buttonText: string;
   variant: "success" | "danger" | "primary" | "default";
+  image: string;
   subCourses?: Array<{
     title: string;
     description: string;
   }>;
 }
 
-const CourseCard = ({ title, description, buttonText, variant, subCourses }: CourseCardProps) => {
+const CourseCard = ({ title, description, buttonText, variant, image, subCourses }: CourseCardProps) => {
   const gradientClass = 
     variant === "success" ? "bg-gradient-green" :
     variant === "danger" ? "bg-gradient-red" :
@@ -26,7 +27,17 @@ const CourseCard = ({ title, description, buttonText, variant, subCourses }: Cou
     "secondary";
 
   return (
-    <Card className={`${gradientClass} border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 h-full flex flex-col`}>
+    <Card className={`${gradientClass} border-0 shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 h-full flex flex-col overflow-hidden`}>
+      {/* Course Image */}
+      <div className="relative w-full h-48 overflow-hidden">
+        <img 
+          src={image} 
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+      </div>
+      
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-white">
           {title}
