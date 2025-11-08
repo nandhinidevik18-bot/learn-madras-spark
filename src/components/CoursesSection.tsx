@@ -26,20 +26,6 @@ const CoursesSection = () => {
       buttonText: "Let's Chat",
       variant: "primary" as const,
       image: itImage,
-      subCourses: [
-        {
-          title: "B.E. in Computer Science & Engineering (Cyber Security)",
-          description: "Secure the digital world with advanced cyber security techniques and ethical hacking skills.",
-        },
-        {
-          title: "B.E. in Computer Science & Business Systems (CSBS)",
-          description: "Combine tech and business skills to create tech-driven solutions for modern enterprises.",
-        },
-        {
-          title: "B.E. in Computer Science & Engineering (AI & ML)",
-          description: "Dive deep into AI & Machine Learning technologies to build smart systems & future-ready applications.",
-        },
-      ],
     },
     {
       title: "Explore More Programs",
