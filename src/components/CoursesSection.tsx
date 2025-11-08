@@ -51,9 +51,9 @@ const CoursesSection = () => {
   ];
 
   return (
-    <section className="w-full py-16 px-6 lg:px-12 bg-background">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="w-full py-12 px-6 lg:px-12 bg-background">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {courses.map((course, index) => (
             <CourseCard key={index} {...course} />
           ))}
